@@ -31,7 +31,7 @@ const Sidebar: React.FC = () => {
       { path: '/reports', icon: BarChart3, label: 'التقارير والتحليلات', roles: ['manager'] },
     ];
 
-    return [...baseItems, ...roleBasedItems].filter(item => 
+    return [...baseItems, ...roleBasedItems].filter(item =>
       item.roles.includes(user?.role || '')
     );
   };
@@ -62,7 +62,7 @@ const Sidebar: React.FC = () => {
           `fixed z-50 top-0 right-0 md:static md:translate-x-0 transition-transform duration-300 bg-white border-l border-gray-200 shadow-lg flex flex-col h-screen md:h-[100dvh] w-64
           ${open ? 'translate-x-0' : 'translate-x-full'} md:translate-x-0 md:fixed md:top-0 md:right-0`
         }
-        style={{height: '100dvh'}}
+        style={{ height: '100dvh' }}
       >
         {/* Drawer toggle button for mobile */}
         <div className="md:hidden flex justify-end p-4">
@@ -76,7 +76,6 @@ const Sidebar: React.FC = () => {
         </div>
         {/* Logo and title */}
         <div className="flex flex-col items-center py-6 border-b border-gray-100 mb-4">
-          <div className="text-4xl mb-2 select-none text-blue-600">🚒</div>
           <div className="text-xl font-extrabold text-gray-900 mb-1">القائمة الرئيسية</div>
         </div>
         <nav className="flex-1 px-4 space-y-1 overflow-y-auto">

@@ -21,18 +21,18 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-40 bg-white shadow-lg border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+    <nav className="top-0 z-40 bg-white shadow-lg border-b border-gray-200 mr-52">
+      <div className="max-w-9xl mx-auto px-6 sm:px-10 lg:px-16">
         <div className="flex justify-between items-center h-16">
           {/* Logo and Title */}
-          <div className="flex items-center">
-            <div className="text-2xl font-bold text-blue-600 ml-4">
-              🚒 نظام إدارة الإطفاء
+          <div className="flex items-center w-100">
+            <div className="text-2xl font-bold text-blue-600 ">
+             دفاع مدني - الخور
             </div>
           </div>
 
           {/* User Actions */}
-          <div className="flex items-center space-x-4 space-x-reverse">
+          <div className="flex items-center  space-x-reverse ml-0">
             {/* Notifications */}
             <div className="relative">
               <button
